@@ -16,11 +16,15 @@ const showDogs = () => {
 }
 showDogs()
 
+// ###### FILTER GOOD DOGS ######
+const showOnlyGoodDogFilter = () => {
+    goodDogFilter.addEventListener("click", (e) => {
+        filterOnorOff()
+    })
+}
+showOnlyGoodDogFilter()
 
-
-goodDogFilter.addEventListener("click", (e) => {
-    filterOnorOff()
-})
+// ----------------------- showOnlyGoodDogFilter HELPERS -----------------------
 
 const filterOnorOff = () => {
     if (goodDogFilter.innerText === "Filter good dogs: ON"){
@@ -34,6 +38,7 @@ const filterOnorOff = () => {
     }
 }
 
+// ### helper of filterOnorOff ###
 const goodDogs = () => {
     fetch(dogsUrl)
     .then(resp => resp.json())
@@ -43,7 +48,7 @@ const goodDogs = () => {
         })
     })
 }
-
+// ----------------------- END showOnlyGoodDogFilter HELPERS -----------------------
 
 
 // ----------------------- showDogs HELPERS -----------------------
