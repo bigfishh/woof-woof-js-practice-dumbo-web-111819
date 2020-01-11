@@ -30,10 +30,12 @@ a `span` with the pup's name to the dog bar (ex: `<span>Mr. Bonkers</span>`).
 
 ### STEP 3: SHOW MORE INFO ABOUT EACH PUP
 When a user clicks on a pup's `span` in the dog bar, that pup's info (`image`, `name`, and `isGoodDog` status) should show up in the `div` with the id of `"dog-info"`.
+
 When you have the pup's information, the dog info `div` should have the following children:
  - an `img` tag with the pup's image url
  - an `h2` with the pup's name
  - a `button` that says `"Good Dog!"` or `"Bad Dog!"` based on whether `isGoodDog` is true or false.
+ 
  Ex:
  ```
   <img src=dog_image_url>
